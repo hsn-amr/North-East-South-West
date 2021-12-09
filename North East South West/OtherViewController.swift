@@ -1,5 +1,5 @@
 //
-//  SouthViewController.swift
+//  OtherViewController.swift
 //  North East South West
 //
 //  Created by administrator on 09/12/2021.
@@ -7,16 +7,15 @@
 
 import UIKit
 
-class SouthViewController: UIViewController {
+class OtherViewController: UIViewController {
 
-
-    @IBOutlet weak var southButton: UIButton!
+    @IBOutlet weak var button: UIButton!
     var text: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        southButton.setTitle(text, for: .normal)
+        button.setTitle(text, for: .normal)
     }
     
 

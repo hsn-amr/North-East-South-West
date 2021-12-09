@@ -16,10 +16,7 @@
 		8474A57C2762162C0051B89F /* North_East_South_WestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A57B2762162C0051B89F /* North_East_South_WestTests.swift */; };
 		8474A5862762162C0051B89F /* North_East_South_WestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A5852762162C0051B89F /* North_East_South_WestUITests.swift */; };
 		8474A5882762162C0051B89F /* North_East_South_WestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A5872762162C0051B89F /* North_East_South_WestUITestsLaunchTests.swift */; };
-		8474A59527621B380051B89F /* EastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A59427621B380051B89F /* EastViewController.swift */; };
-		8474A597276226A10051B89F /* NorthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A596276226A10051B89F /* NorthViewController.swift */; };
-		8474A599276228E80051B89F /* SouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A598276228E80051B89F /* SouthViewController.swift */; };
-		8474A59B27622A2E0051B89F /* WastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A59A27622A2E0051B89F /* WastViewController.swift */; };
+		8474A59D27623D8E0051B89F /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474A59C27623D8E0051B89F /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +50,7 @@
 		8474A5812762162C0051B89F /* North East South WestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "North East South WestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8474A5852762162C0051B89F /* North_East_South_WestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = North_East_South_WestUITests.swift; sourceTree = "<group>"; };
 		8474A5872762162C0051B89F /* North_East_South_WestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = North_East_South_WestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8474A59427621B380051B89F /* EastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastViewController.swift; sourceTree = "<group>"; };
-		8474A596276226A10051B89F /* NorthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthViewController.swift; sourceTree = "<group>"; };
-		8474A598276228E80051B89F /* SouthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthViewController.swift; sourceTree = "<group>"; };
-		8474A59A27622A2E0051B89F /* WastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WastViewController.swift; sourceTree = "<group>"; };
+		8474A59C27623D8E0051B89F /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +108,7 @@
 				8474A56D2762162B0051B89F /* Assets.xcassets */,
 				8474A56F2762162B0051B89F /* LaunchScreen.storyboard */,
 				8474A5722762162B0051B89F /* Info.plist */,
-				8474A59427621B380051B89F /* EastViewController.swift */,
-				8474A596276226A10051B89F /* NorthViewController.swift */,
-				8474A598276228E80051B89F /* SouthViewController.swift */,
-				8474A59A27622A2E0051B89F /* WastViewController.swift */,
+				8474A59C27623D8E0051B89F /* OtherViewController.swift */,
 			);
 			path = "North East South West";
 			sourceTree = "<group>";
@@ -270,13 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8474A599276228E80051B89F /* SouthViewController.swift in Sources */,
 				8474A5692762162A0051B89F /* ViewController.swift in Sources */,
-				8474A59B27622A2E0051B89F /* WastViewController.swift in Sources */,
-				8474A597276226A10051B89F /* NorthViewController.swift in Sources */,
+				8474A59D27623D8E0051B89F /* OtherViewController.swift in Sources */,
 				8474A5652762162A0051B89F /* AppDelegate.swift in Sources */,
 				8474A5672762162A0051B89F /* SceneDelegate.swift in Sources */,
-				8474A59527621B380051B89F /* EastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

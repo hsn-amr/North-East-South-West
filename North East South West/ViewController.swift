@@ -17,29 +17,27 @@ class ViewController: UIViewController {
 
 
     @IBAction func northButtonClicked(_ sender: UIButton) {
-        let northViewController = storyboard?.instantiateViewController(withIdentifier: "North") as! NorthViewController
-        northViewController.text = sender.titleLabel?.text
-        self.navigationController?.present(northViewController, animated: true, completion: nil)
+        goToOtherViewController(sender: sender)
     }
     
     @IBAction func westButtonClicked(_ sender: UIButton) {
-        let wastViewController = storyboard?.instantiateViewController(withIdentifier: "Wast") as! WastViewController
-        wastViewController.text = sender.titleLabel?.text
-        self.navigationController?.present(wastViewController, animated: true, completion: nil)
+        goToOtherViewController(sender: sender)
     }
     
     @IBAction func eastButtonClicked(_ sender: UIButton) {
-        let eastViewController = storyboard?.instantiateViewController(withIdentifier: "East") as! EastViewController
-        eastViewController.text = sender.titleLabel?.text
-        self.navigationController?.present(eastViewController, animated: true, completion: nil)
+        goToOtherViewController(sender: sender)
     }
     
     @IBAction func southButtonClicked(_ sender: UIButton) {
-        let southViewController = storyboard?.instantiateViewController(withIdentifier: "South") as! SouthViewController
-        southViewController.text = sender.titleLabel?.text
-        self.navigationController?.present(southViewController, animated: true, completion: nil)
+        goToOtherViewController(sender: sender)
     }
     
+    
+    private func goToOtherViewController(sender: UIButton){
+        let otherViewController = storyboard?.instantiateViewController(withIdentifier: "Other") as! OtherViewController
+        otherViewController.text = sender.titleLabel?.text
+        self.navigationController?.present(otherViewController, animated: true, completion: nil)
+    }
     @IBAction func unwindAction(unwindSegue: UIStoryboardSegue){
     
     }

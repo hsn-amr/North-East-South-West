@@ -8,41 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--North View Controller-->
-        <scene sceneID="d5r-2Y-Y9t">
-            <objects>
-                <viewController storyboardIdentifier="North" id="MSl-Cv-Odj" customClass="NorthViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ppg-G6-3m2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3av-U3-3bX">
-                                <rect key="frame" x="124.5" y="411" width="165" height="74"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="xP4-6h-hQz" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="E3q-3u-ZWz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="FC9-Jp-SHG"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="3av-U3-3bX" firstAttribute="centerY" secondItem="ppg-G6-3m2" secondAttribute="centerY" id="3Rv-K0-g7c"/>
-                            <constraint firstItem="3av-U3-3bX" firstAttribute="centerX" secondItem="ppg-G6-3m2" secondAttribute="centerX" id="afM-Bz-uxn"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="northButton" destination="3av-U3-3bX" id="bUf-NL-XHr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RhS-gT-Z9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="xP4-6h-hQz" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1016" y="-871"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -56,31 +21,31 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="North"/>
                                 <connections>
-                                    <action selector="northButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suW-Dj-EWK"/>
+                                    <action selector="northButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUf-ET-Nj2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlh-6N-vYd">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlh-6N-vYd">
                                 <rect key="frame" x="352" y="336" width="52" height="224"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="East"/>
                                 <connections>
-                                    <action selector="eastButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUM-i1-MjY"/>
+                                    <action selector="eastButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rx2-Dl-Ule"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq2-2N-Yxc">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq2-2N-Yxc">
                                 <rect key="frame" x="103.5" y="821" width="207" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="South"/>
                                 <connections>
-                                    <action selector="southButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWF-IZ-sLc"/>
+                                    <action selector="southButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ara-Ad-wXD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsR-LX-os2">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsR-LX-os2">
                                 <rect key="frame" x="10" y="336" width="57" height="224"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="West"/>
                                 <connections>
-                                    <action selector="westButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBU-Xs-cX9"/>
+                                    <action selector="westButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POt-vD-nJ0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,47 +72,12 @@
             </objects>
             <point key="canvasLocation" x="1015.9420289855074" y="-186.16071428571428"/>
         </scene>
-        <!--South View Controller-->
-        <scene sceneID="nFs-Cf-blq">
-            <objects>
-                <viewController storyboardIdentifier="South" id="KE6-Vs-3Qd" customClass="SouthViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MIm-tZ-12f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-l6-KSX">
-                                <rect key="frame" x="124.5" y="411" width="165" height="74"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="qVM-Cf-YZf" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="CJG-Ey-Cbz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="A9d-LJ-jxe"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="zp6-l6-KSX" firstAttribute="centerX" secondItem="MIm-tZ-12f" secondAttribute="centerX" id="Cve-nU-TBb"/>
-                            <constraint firstItem="zp6-l6-KSX" firstAttribute="centerY" secondItem="MIm-tZ-12f" secondAttribute="centerY" id="VYV-rJ-Z8O"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="southButton" destination="zp6-l6-KSX" id="Roz-8U-bwu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EyP-SJ-3Wn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="qVM-Cf-YZf" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="975" y="462"/>
-        </scene>
-        <!--East View Controller-->
+        <!--Other View Controller-->
         <scene sceneID="lQ5-bg-fWc">
             <objects>
                 <exit id="3jV-el-2eh" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0h-0U-3Wu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="East" id="En0-cy-uYy" customClass="EastViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Other" id="En0-cy-uYy" customClass="OtherViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guZ-Vk-xkI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,46 +101,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="eastButton" destination="09c-xf-Znh" id="qzI-jB-hk7"/>
+                        <outlet property="button" destination="09c-xf-Znh" id="a1J-gS-ZCD"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="-192.1875"/>
-        </scene>
-        <!--Wast View Controller-->
-        <scene sceneID="ceJ-8p-0KX">
-            <objects>
-                <viewController storyboardIdentifier="Wast" id="Kzd-it-0ui" customClass="WastViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fas-W4-Bpg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHj-En-7na">
-                                <rect key="frame" x="124.5" y="411" width="165" height="74"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="oda-aq-h13" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="jRI-mA-AOA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ywS-Bw-be0"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="QHj-En-7na" firstAttribute="centerX" secondItem="Fas-W4-Bpg" secondAttribute="centerX" id="hVp-wl-57F"/>
-                            <constraint firstItem="QHj-En-7na" firstAttribute="centerY" secondItem="Fas-W4-Bpg" secondAttribute="centerY" id="wik-rX-hSe"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="wastButton" destination="QHj-En-7na" id="Yup-dn-3yj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lMi-U7-N1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="oda-aq-h13" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-769" y="-238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fXI-66-zXG">
